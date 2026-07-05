@@ -196,3 +196,46 @@ redai
 - AIMap needs a Shodan API key to function
 - red-run needs `claude` CLI — install and run on the laptop
 - vulnhuntr installed via `uv tool install vulnhuntr --python 3.10` (uv auto-fetches Python 3.10)
+
+---
+
+## pwnkit — Unified Pentesting Command Suite
+
+**Location:** `/root/buildabot/tools/pwnkit/pwnkit.sh`  
+**Symlink:** `/usr/local/bin/pwnkit`  
+**Reports:** `/root/obsidian-vault/PWNKIT/`  
+
+### Commands
+
+| Command | Description | Dependencies |
+|---------|-------------|-------------|
+| `pwnkit recon <target>` | Full recon: TLS, headers, CORS, cookies, dirs (ffuf), params (arjun), nuclei scan, AI analysis | curl, ffuf, arjun, nuclei |
+| `pwnkit code <path>` | Code vuln scan: vulnhuntr + AI enrichment | vulnhuntr (optional, needs Anthropic key) |
+| `pwnkit ai-scan <target>` | AI infra discovery: probes 25 common AI endpoints | curl |
+| `pwnkit report list\|view\|merge\|delete` | Report management | — |
+| `pwnkit list` | Tool inventory | — |
+
+### Design
+
+- **Bash-based** — zero runtime deps beyond what's installed
+- **Model router** — uses `/root/buildabot/scripts/model-router.py` for AI enrichment (DeepSeek v4 for code/arch tasks)
+- **Obsidian integration** — all reports auto-save to `/root/obsidian-vault/PWNKIT/` as markdown
+- **Graceful degradation** — skips missing tools with proper warnings instead of failing
+- **Timeouts** — every external command has a timeout so the pipeline never hangs
+
+### Quick Start
+```bash
+# Scan a target
+pwnkit recon example.com
+
+# Scan local code (without Anthropic key — just stats)
+pwnkit code /path/to/project
+
+# Scan for AI endpoints
+pwnkit ai-scan 192.168.1.100:8000
+
+# View results
+pwnkit report list
+pwnkit report view 1
+pwnkit report merge 1 2
+```
