@@ -1,0 +1,12 @@
+# binary
+*.eml
+
+# Obsidian plugin binaries (not needed in git)
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/*/obsidian_askpass.sh
+.obsidian/themes/*/theme.css
+
+# Generated workspace state
+.obsidian/workspace.json
+.obsidian/types.json
