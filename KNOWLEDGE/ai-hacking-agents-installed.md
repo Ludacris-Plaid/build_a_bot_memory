@@ -16,8 +16,8 @@
 | 75 | red-run (Black Lantern) | latest | `git clone` + `./install.sh` | ✅ Cloned | `/root/buildabot/tools/red-run`. Needs `claude` CLI (laptop) |
 | 25 | ARTEMIS (Stanford) | latest | `git clone` + `cargo build --release` + `uv sync` | ✅ Built | 24MB codex binary. Needs `OPENROUTER_API_KEY` |
 | 86 | AIMap (BishopFox) | latest | `git clone` + Docker MongoDB + Python deps | ✅ Set up | MongoDB on `127.0.0.1:27017`. Needs Shodan API key |
-| 81 | redai | latest | `git clone` + `bun install` | 🔄 Compiling | `/root/buildabot/tools/redai` |
-| 10 | vulnhuntr (Protect AI) | latest | n/a | ❌ Skipped | Requires Python 3.10 specifically (system has 3.12). Docker would work. |
+| 81 | redai | 0.1.3 | `bun install -g @kpolley/redai` | ✅ Installed | `/usr/local/bin/redai` |
+| 10 | vulnhuntr (Protect AI) | 1.2.2 | `uv tool install vulnhuntr --python 3.10` | ✅ Installed | `vulnhuntr -r /path/to/repo` — uv auto-fetches Python 3.10 |
 | 54 | AgenticRed | latest | n/a | ❌ Skipped | Requires 3× L40 GPUs — not practical for this server |
 | 72 | llmchainhunter | n/a | n/a | ❌ Skipped | Claude Code runbook/docs — not installable |
 | 73 | operant-mcp | latest | `npm install -g operant-mcp` | ✅ Installed | 62 tools, all deps loaded |
@@ -99,7 +99,7 @@
 **Needs:** Shodan API key in `.env`. MongoDB on `127.0.0.1:27017`.  
 **Run:** `cd /root/buildabot/tools/aimap && docker compose up --build`
 
-### redai (#81)
+### redai (#81) — ✅ Installed
 **Repo:** github.com/kpolley/redai  
 **Type:** Terminal workbench for AI-driven vulnerability discovery with live validation in Chrome  
 **Install:** `bun install -g @kpolley/redai` (or clone + `bun install`)  
@@ -107,7 +107,19 @@
 - Scanner agents → candidate findings  
 - Validator agents → prove/disprove in live Chrome/iOS simulator  
 - Detailed Markdown/HTML/JSON report with PoC evidence  
-- **Run:** `redai` (after install completes)  
+- **Run:** `redai`
+
+### vulnhuntr (#10) — ✅ Installed
+**Repo:** github.com/protectai/vulnhuntr  
+**Type:** Autonomous Python code vulnerability hunter — found real 0-days in ComfyUI, Langflow, FastChat, LLaVA  
+**Install:** `uv tool install vulnhuntr --python 3.10` (uv auto-fetches Python 3.10)  
+**Key features:**
+- Scans Python codebases for LFI, AFO, RCE, XSS, SQLi, SSRF, IDOR
+- Uses LLM (Claude/GPT/Ollama) to analyze code paths from input→output
+- Supports SARIF/HTML/JSON/CSV/Markdown reporting
+- Can create GitHub issues for findings
+- Budget-aware scanning (stops after N findings or tokens)
+- **Run:** `vulnhuntr -r /path/to/repo -l claude`
 
 ### operant-mcp (#73)
 **Repo:** github.com/operantlabs/operant-mcp  
@@ -169,8 +181,11 @@ cd /root/buildabot/tools/aimap && docker compose up --build
 # red-run (needs claude CLI)
 cd /root/buildabot/tools/red-run && ./run.sh
 
+# vulnhuntr (code vuln hunter)
+vulnhuntr -r /path/to/repo -l claude --export-all /tmp/reports
+
 # redai (vuln workbench)
-cd /root/buildabot/tools/redai && bun run redai
+redai
 ```
 
 ---
@@ -180,6 +195,4 @@ cd /root/buildabot/tools/redai && bun run redai
 - Most tools need API keys (Anthropic, OpenAI, OpenRouter) — configure via `.env` files
 - AIMap needs a Shodan API key to function
 - red-run needs `claude` CLI — install and run on the laptop
-- vulnhuntr can be run in Docker as a workaround for the Python 3.10 requirement
-- ARTEMIS requires `OPENROUTER_API_KEY` in `.env` to run
-- redai is still compiling dependencies via `bun install` from local checkout
+- vulnhuntr installed via `uv tool install vulnhuntr --python 3.10` (uv auto-fetches Python 3.10)
