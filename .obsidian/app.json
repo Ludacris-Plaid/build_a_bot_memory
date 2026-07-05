@@ -1,0 +1,9 @@
+{
+  "promptDelete": false,
+  "attachmentFolderPath": "ATTACHMENTS",
+  "dailyNotes": {
+    "folder": "DIARY",
+    "format": "YYYY-MM-DD",
+    "template": "SYSTEM/_daily-note-template.md"
+  }
+}
