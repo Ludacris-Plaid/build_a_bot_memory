@@ -10,3 +10,7 @@
 # Generated workspace state
 .obsidian/workspace.json
 .obsidian/types.json
+
+# Secrets — never pushed to GitHub
+INFRASTRUCTURE/
+KEYS/
