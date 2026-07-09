@@ -1,11 +1,11 @@
 # 🌑 Dark Web Scan Report
-> Generated: 2026-07-07 12:03  |  Tor: ✅ ACTIVE
+> Generated: 2026-07-08 12:02  |  Tor: ✅ ACTIVE
 
 ## 📊 Overview
 - Total sites in database: 84
-- Alive (last check): 12
+- Alive (last check): 13
 - New this scan: 0
-- Found down: 8
+- Found down: 7
 
 ## 📁 Category Breakdown
 | Category | Count |
@@ -28,10 +28,10 @@
 - `bellcatmbguthn3age23lrbse...` — bellingcat - the home of online investig [unknown]
 - `ciadotgov4sjwlzihbbgxnqg3...` — CIA [search]
 - `dlegal66uj5u2dvcbrev7vv6f...` — decoded.legal [unknown]
+- `dwnewsgngmhlplxy6o2twtfgj...` —  [blog]
 - `lxwu7pwyszfevhglxfgaukjqj...` — Alexander Hansen Færøy's Homepage [unknown]
 - `michaelahgu3sqef5yz3u242n...` — Michael Altfield - Official Personal Hom [unknown]
 - `nickf43ab43xxf3yqgzy5ueds...` — Nick Frichette [unknown]
-- `rferlo2zxgv23tct66v45s5me...` — Radio Free Europe/Radio Liberty [unknown]
 
 ---
 *Dark Web Scanner v2 — 🚀 Next: schedule daily, add payment tiers*
