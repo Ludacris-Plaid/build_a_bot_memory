@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "fd3abcb577cf216c",
+    "id": "7461b47467bf11dc",
     "type": "split",
     "children": [
       {
-        "id": "089fa8ca519a7694",
+        "id": "40df5a269d61732a",
         "type": "tabs",
         "children": [
           {
-            "id": "c6be7f5916da3f9e",
+            "id": "51db64de86d49034",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "BUILD_A_BOT NOTES/Build_A_Bot Server Notes-July 2026.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Build_A_Bot Server Notes-July 2026"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "1b8443d7ec36ccac",
+    "id": "a6b5d49eab4f33f6",
     "type": "split",
     "children": [
       {
-        "id": "d359f5490f4d6d31",
+        "id": "1cbfeada41228c42",
         "type": "tabs",
         "children": [
           {
-            "id": "33f5f653301a7053",
+            "id": "23ec8ca8294475ca",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,14 +48,14 @@
             }
           },
           {
-            "id": "0380907da3001b5b",
+            "id": "35888fe121baabd4",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
                 "query": "",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "9f0889cd9444c571",
+            "id": "c0445129bddd01aa",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,19 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "aad69960ade83f13",
+    "id": "e4099c5a98b34216",
     "type": "split",
     "children": [
       {
-        "id": "87749719c196fd18",
+        "id": "11de085720eedf9a",
         "type": "tabs",
         "children": [
           {
-            "id": "53facae55fb2fb0a",
+            "id": "feb9e83a3ec8200f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Indications Media Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Indications Media Notes"
             }
           },
           {
-            "id": "3ca3a11d932fdaff",
+            "id": "4f3bf89503869dc8",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Indications Media Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Indications Media Notes"
             }
           },
           {
-            "id": "766b9604d945b8a5",
+            "id": "ef6c13f1ceba682d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +137,7 @@
             }
           },
           {
-            "id": "254179931a4ebbd4",
+            "id": "86323b54b27ba8d5",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,27 +151,18 @@
             }
           },
           {
-            "id": "00911c1a4c17258c",
+            "id": "4b22ce57c8610a7d",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Indications Media Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
-            }
-          },
-          {
-            "id": "08425889ffe4f25b",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "title": "Outline of Indications Media Notes"
             }
           }
         ]
@@ -177,23 +174,53 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "audio-recorder:Start/stop recording": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Create new base": false
     }
   },
-  "active": "33f5f653301a7053",
+  "active": "23ec8ca8294475ca",
   "lastOpenFiles": [
-    "DIARY",
-    "IDEAS",
-    "JOBS",
-    "LEADS",
-    "CLIENTS"
+    "UNSENSORED/code/2026-07-05-080702-1.py",
+    "UNSENSORED/code/2026-07-05-080635-2.py",
+    "UNSENSORED/code/2026-07-05-080635-1.py",
+    "SYSTEMS/final-system-report-2026-07-05.md",
+    "SYSTEMS/LOGS/2026-07-09.md",
+    "SYSTEMS/LOGS/2026-07-08.md",
+    "SYSTEMS/LOGS/2026-07-07.md",
+    "SYSTEMS/LOGS/2026-07-06.md",
+    "SYSTEMS/LOGS/2026-07-05.md",
+    "PWNKIT/2026-07-05_recon_http___127_0_0_1_8080.md",
+    "PWNKIT/2026-07-05_code_pwnkit.md",
+    "PWNKIT/2026-07-05_ai-scan_http___127_0_0_1_8080.md",
+    "PWNKIT",
+    "PROJECTS/quick-money/trending-now.md",
+    "PROJECTS/quick-money/trend-research-system.md",
+    "PROJECTS/quick-money/traffic-playbook.md",
+    "PROJECTS/quick-money/social-media-setup.md",
+    "PROJECTS/quick-money/scraping-service.md",
+    "PROJECTS/quick-money/property-alert-service.md",
+    "PROJECTS/quick-money/money-research.md",
+    "PROJECTS/quick-money/marketplace-projects.md",
+    "PROJECTS/quick-money/grey-brand-separation.md",
+    "PROJECTS/quick-money/dark-web-scan.md",
+    "PROJECTS/quick-money/dark-web-intel.md",
+    "PROJECTS/quick-money/competitor-monitoring.md",
+    "PROJECTS/quick-money/advertising-lead-gen.md",
+    "PROJECTS/quick-money/_freya-playbook.md",
+    "PROJECTS/quick-money/_MASTER.md",
+    "PROJECTS/quick-money",
+    "PROJECTS",
+    "PORTFOLIO/_capabilities.md",
+    "PORTFOLIO",
+    "JOB-SEARCH/2026-07-09_ZipRecruiter-Junior-AI-Infra",
+    "JOB-SEARCH/2026-07-09_Indeed-Junior-Sec-Engineer",
+    "JOB-SEARCH/2026-07-09_HireFeed-ML-AI-Engineer",
+    "JOB-SEARCH/2026-07-09_Beauceron-Junior-AI-Dev"
   ]
 }
