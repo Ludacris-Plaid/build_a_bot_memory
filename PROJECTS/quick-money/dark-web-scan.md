@@ -1,11 +1,11 @@
 # 🌑 Dark Web Scan Report
-> Generated: 2026-07-12 12:02  |  Tor: ⛔ NOT RUNNING
+> Generated: 2026-07-13 12:03  |  Tor: ✅ ACTIVE
 
 ## 📊 Overview
 - Total sites in database: 84
-- Alive (last check): 9
+- Alive (last check): 8
 - New this scan: 0
-- Found down: 11
+- Found down: 12
 
 ## 📁 Category Breakdown
 | Category | Count |
@@ -23,13 +23,12 @@
 
 ## ✅ Verified Alive
 - `7sk2kov2xwx6cbc32phynrife...` — systemli.org - your friendly tech collec [search]
-- `bbcweb3hytmzhn5d532owbu6o...` — BBC Home - Breaking News, World News, US [unknown]
+- `bbcnewsd73hkzno2ini43t4gb...` — BBC - Home [blog]
 - `ciadotgov4sjwlzihbbgxnqg3...` — CIA [search]
-- `dlegal66uj5u2dvcbrev7vv6f...` — decoded.legal [unknown]
 - `dwnewsgngmhlplxy6o2twtfgj...` —  [blog]
 - `lxwu7pwyszfevhglxfgaukjqj...` — Alexander Hansen Færøy's Homepage [unknown]
-- `michaelahgu3sqef5yz3u242n...` — Michael Altfield - Official Personal Hom [unknown]
 - `nickf43ab43xxf3yqgzy5ueds...` — Nick Frichette [unknown]
+- `vww6ybal4bd7szmgncyruucpg...` — Home - riseup.net [unknown]
 - `xw226dvxac7jzcpsf4xb64r4e...` — Ming Di Leom [unknown]
 
 ---
